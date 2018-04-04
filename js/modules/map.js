@@ -1,6 +1,6 @@
 /* global google */
 /* global ReactDOM */
-import Map from '../Components/Map.js';
+import Map from '../components/Map.js';
 
 if (navigator.onLine && window.google) {
     ReactDOM.render(
