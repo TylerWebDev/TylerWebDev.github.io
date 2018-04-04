@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#5a72a1">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/css/app.ab729a15526c00ed6c36.css" media="none" onload="if(media!='all'){media='all';}"/>
+    <link rel="stylesheet" href="/css/app.css"/>
 
     <title>Tyler Web Dev</title>
     <meta name="description" content="Tyler Web Dev">
@@ -18,20 +16,10 @@
 
 <body style="display: flex;min-height: 100vh;flex-direction: column;box-sizing: border-box;font-family: 'Helvetica Neue', 'Calibri Light', Roboto, sans-serif;-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;letter-spacing: .02em;margin: 0;padding: 0;text-rendering: optimizeLegibility;">
 
-<div class="hamburger js-hamburger" style="transition: border-radius 10s;">
-    <div class="hamburger__icon"></div>
-</div>
-<nav class="navigation js-navigation" style="display: none;">
-    <div class="navigation__content">
-        <a href="/">Home</a>
-        <a href="https://github.com/TylerWebDev" target="_blank">Our projects</a>
-    </div>
-</nav>
-
 <header style="height: 100vh;background: #5a72a1;">
     <div style="color: white; text-align: center;position: fixed;width: 100%;margin: 0 auto;top: 40vh;left: 0;">
         <img style="height: 80px;width: auto;" src="/img/Logo-White.png" alt="">
-        <h1 style="font-weight: lighter;margin: 8px 0;">Tyler Web Dev</h1>
+        <h1 style="font-weight: lighter;margin: 8px 0;color: white;">Tyler Web Dev</h1>
         <a style="width: 32px;" class="js-scroll-down-button scroll-down-button">
             <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -73,7 +61,7 @@
 	c0-0.355-0.016-0.707-0.043-1.055C13.893,14.341,13.676,14.224,13.489,14.069z"/>
 </svg>
 </small>
-        Hello World
+        Hello, East Texas.
     </h2>
     <p>Tyler Web Dev is a community of developers, programmers, designers,
         and marketers operating in the heart of East Texas. We are passionate
@@ -85,8 +73,12 @@
     <p>If you're interested in any aspect of web development, why not join our
         organization? We're registered through Meetup.com, which you can find below.
         You can also find us on various social media outlets.</p>
-    <a class="button" href="http://www.meetup.com/Tyler-Web-Dev" target="_blank"
-       onclick="ga('send', 'event', {'eventCategory': 'Social','eventAction': 'Click','event': 'Join Our Metup'});">Join Our Meetup</a>
+    <div class="button-container">
+        <a class="button" href="http://www.meetup.com/Tyler-Web-Dev" target="_blank"
+                onclick="ga('send', 'event', {'eventCategory': 'Social','eventAction': 'Click','event': 'Join Our Meetup'});">Join Our Meetup</a>
+        <a class="button" href="https://join.slack.com/t/tylerwebdev/shared_invite/enQtMzM0MDcyMDA4NzQwLTk2NGYyZmRlMGIyNjRiYjE1OWUzM2U1NzVjNTU3MDIyMmQyNmMwZGUzYjUyYzRlMTZjMTQ4YWJmMWY0NTEzMTg" target="_blank"
+                onclick="ga('send', 'event', {'eventCategory': 'Social','eventAction': 'Click','event': 'Join Our Slack'});">Join Slack Community</a>
+    </div>
 </section>
 <hr/>
 <section>
@@ -160,7 +152,7 @@
 	c1.196-0.235,2.179,0.517,2.531,0.835C17.078,9.557,17.097,9.691,17.037,9.797z"/>
 </svg>
 </small>
-        <span class="members-count js-members-count">253</span> Members and counting
+        <span class="members-count">285</span> Members and counting
     </h2>
     <p>We have meetup members from all over East Texas. Each and every one of us
         are truly passionate about web development and each bring our own unique
@@ -226,8 +218,11 @@
         </li>
     </ul>
 </footer>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAQF_pP8XZoZPZUihJxL02jBE85Bu0LZY"></script>
-<script async defer src="/js/main.e3e611fcb5f88dd58466.js"></script>
+<script async defer type="module" src="/js/app.js"></script>
+<!--<script async defer src="/js/main.e3e611fcb5f88dd58466.js"></script>-->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

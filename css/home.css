@@ -1,0 +1,109 @@
+@keyframes bob {
+    0% {
+        top: -4px;
+    }
+
+    50% {
+        top: 4px;
+    }
+
+    100% {
+        top: -4px;
+    }
+}
+
+.scroll-down-button {
+    animation: bob 1.5s infinite;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+    fill: var(--white);
+    position: relative;
+    width: 32px;
+}
+
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsors .sponsors__link {
+    display: flex;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.sponsors .sponsors__link img {
+    height: 50px;
+}
+
+.details {
+    padding: 16px 0 0;
+}
+
+.details a {
+    color: var(--white);
+}
+
+li {
+    font-weight: lighter;
+    line-height: 32px;
+}
+
+em {
+    color: var(--white);
+    display: inline-block;
+    min-width: 140px;
+}
+
+.social-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: auto;
+    max-width: 400px;
+    padding: 64px 15px;
+}
+
+.social-list .divider {
+    display: block;
+}
+
+.social-list a {
+    display: block;
+    padding: 30px;
+}
+
+.icon {
+    margin: 0 auto;
+    width: 24px;
+}
+
+.icon svg {
+    width: 24px;
+}
+
+.icon.icon--inline {
+    display: inline-block;
+}
+
+.icon.icon--inline {
+    margin-bottom: -4px;
+}
+
+.icon.icon--inline svg {
+    margin-bottom: -4px;
+}
+
+.icon.icon--medium svg {
+    width: 36px;
+}
+
+.icon.icon--light svg {
+    fill: var(--white);
+}
+
+.icon.icon--dark svg {
+    fill: var(--waikawa-gray);
+}

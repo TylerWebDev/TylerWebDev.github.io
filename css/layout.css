@@ -1,0 +1,12 @@
+.main {
+    background-color: var(--white);
+    flex: 1;
+    padding-top: 32px;
+    z-index: 0;
+}
+
+.footer {
+    background-color: var(--mine-shaft);
+    padding: 0 32px;
+    z-index: 0;
+}

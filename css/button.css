@@ -1,0 +1,37 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    margin: 10px;
+    background: var(--waikawa-gray);
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 16px 64px;
+    text-decoration: none;
+}
+
+.button .button--bordered {
+    border: 2px solid var(--white);
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
+
+.button[disabled] {
+    filter: brightness(65%);
+    cursor: default;
+}
+
+.button.small {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-right: 8px;
+    padding: 8px 16px;
+}
